@@ -28,7 +28,7 @@ describe('CI sequence', () => {
     expect(/.*pull\s+request.*/ig.test(fileContents)).toBe(true);
   });
   
-    it('5. Merge/rebase commits from master. Make tests pass on the merge result.', () => {
+  it('5. Merge/rebase commits from master. Make tests pass on the merge result.', () => {
     expect(/.*merge.*commits.*tests\s+pass.*/ig.test(fileContents)).toBe(true);
   });
 
